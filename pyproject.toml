@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "audio-generation-claim-audit"
+version = "0.1.0"
+description = "Offline audit of prompt conditioned sound creation claims"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+
+[project.scripts]
+audio-generation-claim-audit = "audio_generation_claim_audit.audit:main"
+
+[tool.setuptools.packages.find]
+include = ["audio_generation_claim_audit*"]
